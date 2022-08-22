@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Мир Фототехники</title><!-- -->
+<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon"><!--фавикон -->
+<link type="Image/x-icon" href="img/favicon.ico" rel="icon"><!--фавикон -->
+<meta name="Description" content="Продажа фототехники">
+<meta name="Keywords" content="фотоаппараты, линзы, матрицы"> 
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background">
+<div class="logo">
+Мир фототехники
+</div>
+<div class="menuwe">
+<div class="xs-menu-cont">
+			<a id="menutoggle"><i class="fa fa-align-justify"></i> </a>
+				<nav class="xs-menu displaynone">
+					<ul>
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Team</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li class="active">
+						<a href="#">Главная</a>
+					</li>
+					<li class="drop-down">
+						<a href="#">Каталог</a>
+					 
+						<div class="mega-menu fadeIn animated">
+							<div class="mm-6column">
+								
+								<span class="categories-list">
+							<ul>
+							<span>Плёночная техника</span>
+								<li>Фотокамеры</li>
+								<li>Объективы</li>
+								<li>Трипфлежиоети</li>
+								<li><a class="mm-view-more" href="#">Посмотреть всё →</a></li>
+							</ul>
+						</span>
+							
+							</div>
+							<div class="mm-3column">
+						<span class="categories-list">
+						<ul>
+							 <span>Цифровая техника</span>
+								<li>Фотокамеры
+								<li>Объективы
+								<li>Аксессуары
+								
+								<li><a class="mm-view-more" href="#">Посмотреть всё →</a></li>
+							</ul>
+						</span>							
+							</div>
+							<!--
+							<div class="mm-3column">
+								<span class="categories-list">
+						<ul>
+							<span>Car Electronics</span>
+							<li>GPS & Navigation</li>
+							<li>In-Dash Stereos</li>
+							<li>Speakers</li>
+							<li>Subwoofers</li>
+							<li>Amplifiers</li>
+						    <li>MP3 Players</li>
+							<li>iPods</li>
+						   	<li><a class="mm-view-more" href="#">View more →</a></li>
+						</ul>
+					</span>
+						</div>
+						-->
+					</div>
+			 
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#">Куплю</a>
+					</li>
+					
+					
+         <li style="float:right;">
+           <a href="http://www.google.com/"></a>
+          </li>
+
+				</ul>
+			</nav>
+</div>
+<div class="textcontent">
+Мир фототехники<br><br><br><br><br><br>as
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+			$(document).ready(function() {
+				//responsive menu toggle
+				$("#menutoggle").click(function() {
+					$('.xs-menu').toggleClass('displaynone');
+
+					});
+				//add active class on menu
+				$('ul li').click(function(e) {
+					e.preventDefault();
+					$('li').removeClass('active');
+					$(this).addClass('active');
+				});
+			//drop down menu	
+					$(".drop-down").hover(function() {
+						$('.mega-menu').addClass('display-on');
+					});
+					$(".drop-down").mouseleave(function() {
+						$('.mega-menu').removeClass('display-on');
+					});
+			
+			});
+
+</script>
+</body>
+ </html>
